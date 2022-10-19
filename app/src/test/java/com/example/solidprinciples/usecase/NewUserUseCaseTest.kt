@@ -2,6 +2,10 @@ package com.example.solidprinciples.usecase
 
 import org.junit.jupiter.api.Test
 
+/**
+ * Please use [RegistrationUseCaseTest], [EmailUseCaseTest], and [UpdateUserUseCaseTest] instead.
+ */
+@Deprecated("Violate Single Responsibility, Dependency Inversion")
 internal class NewUserUseCaseTest {
 
     @Test

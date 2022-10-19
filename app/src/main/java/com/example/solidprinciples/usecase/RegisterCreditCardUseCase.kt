@@ -1,12 +1,12 @@
 package com.example.solidprinciples.usecase
 
 import com.example.solidprinciples.model.User
-import com.example.solidprinciples.service.SimpleRegisterCardService
+import com.example.solidprinciples.service.CreditCardService
 
-class RegisterCreditCardUseCase {
-    private val simpleRegisterCardService = SimpleRegisterCardService()
-
+class RegisterCreditCardUseCase(
+    private val creditCardService: CreditCardService
+) {
     fun register(user: User) {
-        simpleRegisterCardService.registerCreditCard(user)
+        creditCardService.registerCreditCard(user)
     }
 }

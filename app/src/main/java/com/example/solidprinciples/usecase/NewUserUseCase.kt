@@ -6,6 +6,10 @@ import com.example.solidprinciples.service.EmailService
 import com.example.solidprinciples.service.RegistrationService
 import com.example.solidprinciples.service.UserService
 
+/**
+ * Please use [RegistrationUseCase], [EmailUseCase], and [UpdateUserUseCase] instead.
+ */
+@Deprecated("Violate Single Responsibility, Dependency Inversion")
 class NewUserUseCase {
     private val registrationService = RegistrationService()
     private val emailService = EmailService()
